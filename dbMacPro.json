@@ -1,0 +1,31 @@
+{
+  "macPro": [
+    {
+      "image": "https://www.apple.com/v/macbook-pro/af/images/overview/compare/compare_mbp13__e0rrkgjx9zqu_large_2x.png",
+      "title": "MacBook Pro 13",
+      "chip": "Apple M2 chip",
+      "price": 1299,
+      "screenSize": "Retina 13.3",
+      "description": "asdasd",
+      "id": 2
+    },
+    {
+      "image": "https://www.apple.com/v/macbook-pro/af/images/overview/compare/compare_mbp14__f17pgqjk7syi_large_2x.png",
+      "title": "MacBook Pro 14",
+      "chip": "Apple M1 Pro chip",
+      "price": 1999,
+      "screenSize": "Liquid Retina XDR",
+      "description": "ssdfsdf",
+      "id": 3
+    },
+    {
+      "image": "https://www.apple.com/v/macbook-pro/af/images/overview/compare/compare_mbp16__b991itovw9py_large_2x.png",
+      "title": "MacBook Pro 16",
+      "chip": "Apple M1 Pro chip",
+      "price": 2499,
+      "screenSize": "Liquid Retina XDR",
+      "description": "wdfdf",
+      "id": 4
+    }
+  ]
+}

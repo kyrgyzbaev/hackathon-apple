@@ -1,31 +1,31 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import {
   Box,
   Breadcrumbs,
-  Button,
   Container,
   Link,
   TextField,
   Typography,
 } from "@mui/material";
-import { useNavigate, useParams } from "react-router-dom";
-import Loader from "../Loader/Loader";
+import { useNavigate } from "react-router-dom";
 import { macsContext } from "../../contexts/macsContext";
+import { macbookAirContext } from "../../contexts/macbookAirContext";
 
 // title, description, price, image
 
-const EditProductForm = () => {
-  const { getOneMac, oneMac, updateMac } = useContext(macsContext);
-  const { id } = useParams();
+const AddMacBookAir = () => {
+  const { createAir } = useContext(macbookAirContext);
   const navigate = useNavigate();
+
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
   const [chip, setChip] = useState("");
   const [price, setPrice] = useState("");
   const [screenSize, setScreenSize] = useState("");
   const [description, setDescription] = useState("");
+
   function handleValues() {
-    let editedProduct = {
+    let newAir = {
       image,
       title,
       chip,
@@ -34,59 +34,41 @@ const EditProductForm = () => {
       description,
     };
     if (
-      !title.trim() ||
-      !description.trim() ||
-      !price ||
       !image.trim() ||
-      !screenSize.trim()
+      !title.trim() ||
+      !price ||
+      !screenSize ||
+      !description.trim() ||
+      !chip.trim()
     ) {
-      alert("заполните поля!");
+      alert("fill in the fields!");
       return;
     }
-    updateMac(id, editedProduct);
-    navigate("/macs");
+    createAir(newAir);
+    navigate("/macbook-air");
   }
-  useEffect(() => {
-    getOneMac(id);
-  }, []);
-  useEffect(() => {
-    if (oneMac) {
-      setTitle(oneMac.title);
-      setPrice(oneMac.price);
-      setImage(oneMac.image);
-      setDescription(oneMac.description);
-      setChip(oneMac.chip);
-      setScreenSize(oneMac.screenSize);
-    }
-  }, [oneMac]);
-  return oneMac ? (
+
+  return (
     <Container maxWidth="sm">
       <Breadcrumbs aria-label="breadcrumb">
         <Link
           fontFamily={"-moz-initial"}
           underline="hover"
           color="inherit"
-          href="/">
-          Shop
-        </Link>
-        <Link
-          fontFamily={"-moz-initial"}
-          underline="hover"
-          color="inherit"
-          href="/macs">
-          Mac
+          href="/macbook-air">
+          Macbook Air
         </Link>
         <Typography fontFamily={"-moz-initial"} color="text.primary">
-          Edit
+          Add
         </Typography>
       </Breadcrumbs>
       <Box
-        fontFamily={"-moz-initial"}
         display={"flex"}
         flexDirection={"column"}
         padding={"30px"}
         textAlign={"center"}>
-        <p className="edit-m-p">Edit mac</p>
+        <p className="add-m-t">Add new mac</p>
+
         <TextField
           value={image}
           onChange={e => setImage(e.target.value)}
@@ -98,23 +80,20 @@ const EditProductForm = () => {
         <TextField
           value={title}
           onChange={e => setTitle(e.target.value)}
-          id="standard-basic"
           label="Title"
           variant="standard"
           style={{ margin: "10px" }}
         />
         <TextField
-          style={{ margin: "10px" }}
-          variant="standard"
           value={chip}
           onChange={e => setChip(e.target.value)}
           label="Chip"
+          variant="standard"
         />
         <TextField
-          type="number"
+          type={"number"}
           value={price}
           onChange={e => setPrice(+e.target.value)}
-          id="standard-basic"
           label="Price"
           variant="standard"
           style={{ margin: "10px" }}
@@ -122,27 +101,28 @@ const EditProductForm = () => {
         <TextField
           value={screenSize}
           onChange={e => setScreenSize(e.target.value)}
+          label="Screen size and Display"
           variant="standard"
           style={{ margin: "10px" }}
-          label="Screen Size"
         />
-        {/* <TextField
+
+        <TextField
           value={description}
           onChange={e => setDescription(e.target.value)}
-          id="standard-basic"
-          label="Description"
           variant="standard"
-          style={{ margin: "10px" }}
-        /> */}
+          label="Description"
+        />
 
-        <button className="edit-m-btn" onClick={handleValues}>
-          Save product
+        <button
+          className="add-mens-btn"
+          onClick={handleValues}
+          style={{ margin: "10px" }}
+          variant="contained">
+          Add mac
         </button>
       </Box>
     </Container>
-  ) : (
-    <Loader />
   );
 };
 
-export default EditProductForm;
+export default AddMacBookAir;

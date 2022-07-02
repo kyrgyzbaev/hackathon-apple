@@ -13,17 +13,17 @@ import EditIcon from "@mui/icons-material/Edit";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { useNavigate } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { macsContext } from "../../contexts/macsContext";
 import { authContext } from "../../contexts/authContext";
+import { macbookAirContext } from "../../contexts/macbookAirContext";
 
 const ProductCard = ({ item }) => {
   const navigate = useNavigate();
-  const { deleteMac } = useContext(macsContext);
+  const { deleteAir } = useContext(macbookAirContext);
   const { isAdmin } = useContext(authContext);
   // const { addProductToCart, checkProductInCart } = useContext(menscartContext);
   // const [checkProduct, setCheckProduct] = useState(checkProductInCart(item));
 
-  // console.log(item);
+  console.log(item);
 
   return (
     <div className="card">
@@ -48,7 +48,7 @@ const ProductCard = ({ item }) => {
 
         <a
           className="learn-more"
-          onClick={() => navigate(`/macs/${item.id}`)}
+          onClick={() => navigate(`/macbook-air/${item.id}`)}
           href="">
           Learn more {" >"}
         </a>
@@ -63,12 +63,12 @@ const ProductCard = ({ item }) => {
       <div className="card-icons">
         {isAdmin ? (
           <>
-            <Button size="small" onClick={() => deleteMac(item.id)}>
+            <Button size="small" onClick={() => deleteAir(item.id)}>
               <DeleteIcon className="delete-icon" />
             </Button>
             <Button
               size="small"
-              onClick={() => navigate(`/edit-macs/${item.id}`)}>
+              onClick={() => navigate(`/edit-macbook-air/${item.id}`)}>
               <EditIcon className="edit-icon" />
             </Button>
           </>

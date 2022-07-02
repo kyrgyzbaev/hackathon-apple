@@ -37,14 +37,6 @@ const IphoneList = () => {
             />
             <p>iPhone 11</p>
           </div>
-          <div className="iphone_icon-5">
-            <img
-              className="iphone-se"
-              src="	https://www.apple.com/v/iphone/home/bh/images/chapternav/iphone_se_light__fhg8duy6ffau_large.svg"
-              alt=""
-            />
-            <p>iPhone SE</p>
-          </div>
         </div>
 
         <div className="vh5-container">
@@ -87,12 +79,13 @@ const IphoneList = () => {
       </div>
 
       <div className="iphone-13-container-vh2"></div>
+
       <div className="all-all-container-iphone-se">
         <div className="inscription-iphone-se">
-          <p className="iphone-se-p">iPhone SE</p>
+          <p className="iphone-se-p">iPhone 12</p>
           <p className="love-the-power">Love the power.</p>
           <p className="love-the-price">Love the price.</p>
-          <p className="iphone-se-dollar">$ 429</p>
+          <p className="iphone-se-dollar">$ 599</p>
           <button className="iphone-se-btn">Buy</button>
           <a className="iphone-se-a" href="">
             Learn more {" >"}{" "}
@@ -101,7 +94,7 @@ const IphoneList = () => {
         <div className="container-img-iphone-se">
           <img
             className="img-iphone-se"
-            src="https://www.apple.com/v/iphone/home/bh/images/overview/hero/iphone_se_hero__gd586pazxqqa_large_2x.jpg"
+            src="https://www.apple.com/newsroom/images/product/iphone/geo/apple_iphone-12_2-up_geo_10132020_inline.jpg.large_2x.jpg"
             alt=""
           />
         </div>

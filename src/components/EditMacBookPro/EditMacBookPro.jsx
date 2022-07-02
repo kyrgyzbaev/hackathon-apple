@@ -11,11 +11,12 @@ import {
 import { useNavigate, useParams } from "react-router-dom";
 import Loader from "../Loader/Loader";
 import { macsContext } from "../../contexts/macsContext";
+import { macProContext } from "../../contexts/macbookPro";
 
 // title, description, price, image
 
-const EditProductForm = () => {
-  const { getOneMac, oneMac, updateMac } = useContext(macsContext);
+const EditMacBookPro = () => {
+  const { getOneMacPro, oneMacPro, updateMacPro } = useContext(macProContext);
   const { id } = useParams();
   const navigate = useNavigate();
   const [image, setImage] = useState("");
@@ -25,7 +26,7 @@ const EditProductForm = () => {
   const [screenSize, setScreenSize] = useState("");
   const [description, setDescription] = useState("");
   function handleValues() {
-    let editedProduct = {
+    let editedMacPro = {
       image,
       title,
       chip,
@@ -38,28 +39,29 @@ const EditProductForm = () => {
       !description.trim() ||
       !price ||
       !image.trim() ||
-      !screenSize.trim()
+      !screenSize.trim() ||
+      !chip.trim()
     ) {
       alert("заполните поля!");
       return;
     }
-    updateMac(id, editedProduct);
-    navigate("/macs");
+    updateMacPro(id, editedMacPro);
+    navigate("/macbook-pro");
   }
   useEffect(() => {
-    getOneMac(id);
+    getOneMacPro(id);
   }, []);
   useEffect(() => {
-    if (oneMac) {
-      setTitle(oneMac.title);
-      setPrice(oneMac.price);
-      setImage(oneMac.image);
-      setDescription(oneMac.description);
-      setChip(oneMac.chip);
-      setScreenSize(oneMac.screenSize);
+    if (oneMacPro) {
+      setTitle(oneMacPro.title);
+      setPrice(oneMacPro.price);
+      setImage(oneMacPro.image);
+      setDescription(oneMacPro.description);
+      setChip(oneMacPro.chip);
+      setScreenSize(oneMacPro.screenSize);
     }
-  }, [oneMac]);
-  return oneMac ? (
+  }, [oneMacPro]);
+  return oneMacPro ? (
     <Container maxWidth="sm">
       <Breadcrumbs aria-label="breadcrumb">
         <Link
@@ -104,10 +106,10 @@ const EditProductForm = () => {
           style={{ margin: "10px" }}
         />
         <TextField
-          style={{ margin: "10px" }}
-          variant="standard"
           value={chip}
           onChange={e => setChip(e.target.value)}
+          style={{ margin: "10px" }}
+          variant="standard"
           label="Chip"
         />
         <TextField
@@ -126,14 +128,13 @@ const EditProductForm = () => {
           style={{ margin: "10px" }}
           label="Screen Size"
         />
-        {/* <TextField
+        <TextField
           value={description}
           onChange={e => setDescription(e.target.value)}
           id="standard-basic"
           label="Description"
           variant="standard"
-          style={{ margin: "10px" }}
-        /> */}
+        />
 
         <button className="edit-m-btn" onClick={handleValues}>
           Save product
@@ -145,4 +146,4 @@ const EditProductForm = () => {
   );
 };
 
-export default EditProductForm;
+export default EditMacBookPro;

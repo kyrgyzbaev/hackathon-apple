@@ -11,11 +11,12 @@ import {
 import { useNavigate, useParams } from "react-router-dom";
 import Loader from "../Loader/Loader";
 import { macsContext } from "../../contexts/macsContext";
+import { macbookAirContext } from "../../contexts/macbookAirContext";
 
 // title, description, price, image
 
 const EditProductForm = () => {
-  const { getOneMac, oneMac, updateMac } = useContext(macsContext);
+  const { getOneAir, oneAir, updateAir } = useContext(macbookAirContext);
   const { id } = useParams();
   const navigate = useNavigate();
   const [image, setImage] = useState("");
@@ -43,23 +44,23 @@ const EditProductForm = () => {
       alert("заполните поля!");
       return;
     }
-    updateMac(id, editedProduct);
-    navigate("/macs");
+    updateAir(id, editedProduct);
+    navigate("/macbook-air");
   }
   useEffect(() => {
-    getOneMac(id);
+    getOneAir(id);
   }, []);
   useEffect(() => {
-    if (oneMac) {
-      setTitle(oneMac.title);
-      setPrice(oneMac.price);
-      setImage(oneMac.image);
-      setDescription(oneMac.description);
-      setChip(oneMac.chip);
-      setScreenSize(oneMac.screenSize);
+    if (oneAir) {
+      setTitle(oneAir.title);
+      setPrice(oneAir.price);
+      setImage(oneAir.image);
+      setDescription(oneAir.description);
+      setChip(oneAir.chip);
+      setScreenSize(oneAir.screenSize);
     }
-  }, [oneMac]);
-  return oneMac ? (
+  }, [oneAir]);
+  return oneAir ? (
     <Container maxWidth="sm">
       <Breadcrumbs aria-label="breadcrumb">
         <Link
@@ -73,8 +74,8 @@ const EditProductForm = () => {
           fontFamily={"-moz-initial"}
           underline="hover"
           color="inherit"
-          href="/macs">
-          Mac
+          href="/macbook-air">
+          Macbook Air
         </Link>
         <Typography fontFamily={"-moz-initial"} color="text.primary">
           Edit

@@ -1,29 +1,29 @@
 import React, { useReducer } from "react";
 import axios from "axios";
 
-export const macsContext = React.createContext();
+export const macbookAirContext = React.createContext();
 
-const API = "http://localhost:8003/mac";
+const API = "http://localhost:8004/macbookAir";
 
 const INIT_STATE = {
-  macs: [],
-  oneMac: null,
+  airs: [],
+  oneAir: null,
   pages: 0,
 };
 
 function reducer(state = INIT_STATE, action) {
   switch (action.type) {
-    case "GET_MACS":
+    case "GET_AIRS":
       return {
         ...state,
-        macs: action.payload.data,
+        airs: action.payload.data,
         pages: Math.ceil(action.payload.headers["x-total-count"] / 3),
       };
 
-    case "GET_ONE_MAC":
+    case "GET_ONE_AIR":
       return {
         ...state,
-        oneMac: action.payload,
+        oneAir: action.payload,
       };
 
     default:
@@ -31,57 +31,54 @@ function reducer(state = INIT_STATE, action) {
   }
 }
 
-const MacsContextProvider = ({ children }) => {
+const MacbookAirContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
-  async function createMac(newMac) {
-    await axios.post(API, newMac);
+  async function createAir(newAir) {
+    await axios.post(API, newAir);
   }
 
-  async function getMacs() {
+  async function getAirs() {
     // console.log(`${API}${window.location.search}`);
     let res = await axios(`${API}${window.location.search}`);
     // console.log(res);
     dispatch({
-      type: "GET_MACS",
+      type: "GET_AIRS",
       payload: res,
     });
   }
 
   //   console.log(state.pages);
-  async function deleteMac(id) {
+  async function deleteAir(id) {
     await axios.delete(`${API}/${id}`);
-    getMacs();
+    getAirs();
   }
 
-  async function getOneMac(id) {
+  async function getOneAir(id) {
     let res = await axios(`${API}/${id}`);
     dispatch({
-      type: "GET_ONE_MAC",
+      type: "GET_ONE_AIR",
       payload: res.data,
     });
   }
 
-  async function updateMac(id, editedProduct) {
+  async function updateAir(id, editedProduct) {
     await axios.patch(`${API}/${id}`, editedProduct);
   }
   return (
-    <macsContext.Provider
+    <macbookAirContext.Provider
       value={{
-        macs: state.macs,
-        advertisingPicture: state.advertisingPicture,
-        oneMac: state.oneMac,
-        onePicture: state.onePicture,
+        airs: state.airs,
+        oneAir: state.oneAir,
         pages: state.pages,
-        pagesPicture: state.pagesPicture,
-        createMac,
-        getMacs,
-        deleteMac,
-        getOneMac,
-        updateMac,
+        createAir,
+        getAirs,
+        deleteAir,
+        getOneAir,
+        updateAir,
       }}>
       {children}
-    </macsContext.Provider>
+    </macbookAirContext.Provider>
   );
 };
-export default MacsContextProvider;
+export default MacbookAirContextProvider;

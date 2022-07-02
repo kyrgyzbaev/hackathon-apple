@@ -1077,7 +1077,7 @@
 }
 
 .img-iphone-se {
-  width: 450px;
+  width: 580px;
   height: 800px;
 }
 
@@ -1139,6 +1139,7 @@
 .all-all-container-iphone-se {
   display: flex;
   justify-content: baseline;
+  background-color: rgba(240, 242, 243, 0.42);
 }
 
 .iphone-se-container-vh2 {
@@ -1191,4 +1192,265 @@
   flex-direction: column;
   align-items: center;
   background-color: rgba(225, 223, 223, 0.59);
+}
+
+.add-macs-button {
+  width: 80px;
+  height: 40px;
+  background-color: rgb(53, 114, 212);
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.macbook-air-p {
+  font-size: 80px;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.macbook-air-img-1 {
+  width: 450px;
+  height: 250px;
+  margin-right: 80px;
+}
+.macbook-air-img-2 {
+  width: 450px;
+  height: 250px;
+}
+
+.container-all-macbook-air {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-images-air {
+  display: flex;
+  justify-content: baseline;
+}
+
+.inscriptions-macbook-air {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 75px;
+  margin-top: 50px;
+}
+
+.inscriptions-macbook-air-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.macbook-air-m1 {
+  font-size: 25px;
+}
+
+.macbook-air-p-1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.macbook-air-btn {
+  width: 70px;
+  height: 40px;
+  background-color: rgb(53, 114, 212);
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.macbook-air-a {
+  font-size: 20px;
+  color: rgb(53, 114, 212);
+  text-decoration: none;
+}
+
+.macbook-air-a:hover {
+  text-decoration: underline;
+}
+
+.macbook-air-m1-2 {
+  font-size: 25px;
+}
+
+.macbook-air-p-2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.macbook-air-btn-2 {
+  width: 70px;
+  height: 40px;
+  background-color: rgb(53, 114, 212);
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.macbook-air-a-2 {
+  font-size: 20px;
+  color: rgb(53, 114, 212);
+  text-decoration: none;
+}
+
+.macbook-air-a-2:hover {
+  text-decoration: underline;
+}
+
+.inscriptions-macbook-air-2 {
+  margin-top: 50px;
+}
+
+.add-macbook-air-btn {
+  width: 120px;
+  height: 30px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  background-color: rgb(53, 114, 212);
+  cursor: pointer;
+}
+
+.container-btn-add-air {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container-pro-p {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.pro-mac-p {
+  font-size: 80px;
+}
+
+.img-macbook-pro {
+  width: 400px;
+  height: 220px;
+  margin-right: 80px;
+}
+
+.img-macbook-pro-2 {
+  width: 550px;
+  height: 250px;
+}
+
+.container-images-macbook-pro {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.inscription-macbook-pro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 75px;
+}
+
+.inscription-macbook-pro-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mac-13 {
+  font-size: 45px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.pro-dollar {
+  font-size: 25px;
+}
+
+.mac-pro-btn {
+  width: 70px;
+  height: 40px;
+  background-color: rgb(53, 114, 212);
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.mac-pro-a {
+  font-size: 20px;
+  color: rgb(53, 114, 212);
+  text-decoration: none;
+}
+
+.mac-pro-a:hover {
+  text-decoration: underline;
+}
+.mac-14-16 {
+  font-size: 45px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.pro-dollar-2 {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.mac-pro-btn-2 {
+  width: 70px;
+  height: 40px;
+  background-color: rgb(53, 114, 212);
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.mac-pro-a-2 {
+  font-size: 20px;
+  color: rgb(53, 114, 212);
+  text-decoration: none;
+}
+
+.mac-pro-a-2:hover {
+  text-decoration: underline;
+}
+
+.mac-pro-add-btn {
+  background-color: rgb(53, 114, 212);
+  color: white;
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+}
+
+.mac-pro-add-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

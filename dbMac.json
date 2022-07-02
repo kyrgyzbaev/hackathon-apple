@@ -15,38 +15,38 @@
       "id": 5
     },
     {
-      "image": "https://www.apple.com/v/macbook-air-m1/b/images/overview/compare/compare_mba_m2__e3tzj75hwnqu_large_2x.png",
+      "image": "https://www.apple.com/v/macbook-air-m1/b/images/overview/compare/compare_mbp_13__9j7gq7j09le6_large_2x.png",
       "title": "Macbook Air ",
-      "chip": "M2",
-      "price": 444,
-      "screenSize": "Retina 13",
+      "chip": "M1",
+      "price": 999,
+      "screenSize": "Retina 13.3",
       "description": "Up to 16GB memory Up to 2TB storage3 Up to 18 hours battery life1 Touch ID",
       "id": 16
     },
     {
-      "image": "https://www.apple.com/v/macbook-air-m1/b/images/overview/compare/compare_mbp_13__9j7gq7j09le6_large_2x.png",
+      "image": "https://www.apple.com/v/macbook-air-m1/b/images/overview/compare/compare_mba_m2__e3tzj75hwnqu_large_2x.png",
       "title": "MacBook Air ",
       "chip": "M2",
-      "price": 444,
-      "screenSize": "Retina 15",
+      "price": 1199,
+      "screenSize": "Liquid Retina 13.6",
       "description": "Up to 24GB memory Up to 2TB storage3 Up to 18 hours battery life6 Touch ID",
       "id": 17
     },
     {
-      "image": "https://www.apple.com/v/macbook-air-m1/b/images/overview/compare/compare_mba_m2__e3tzj75hwnqu_large_2x.png",
+      "image": "https://www.euronics.ee/UserFiles/Products/Images/322881-486241-medium.png",
       "title": "MacBook Pro ",
       "chip": "M2 Max",
-      "price": 999,
-      "screenSize": "Retina 16",
+      "price": 1299,
+      "screenSize": "Retina 13.3",
       "description": "Up to 64GB memory Up to 8TB storage3 Up to 21 hours battery life8 Touch ID",
       "id": 18
     },
     {
-      "image": "https://www.apple.com/v/macbook-air-m1/b/images/overview/compare/compare_mba_m2__e3tzj75hwnqu_large_2x.png",
-      "title": "MacBook Air",
-      "chip": "M2",
+      "image": "https://www.apple.com/v/mac/home/bp/images/overview/compare/compare_mbp14_and_16__f2dhysusb5im_large_2x.png",
+      "title": "MacBook Pro 14 & 16",
+      "chip": "M1 Pro chip",
       "price": 213,
-      "screenSize": "Retina 13",
+      "screenSize": "Retina",
       "description": "Up to 24GB memory Up to 2TB storage3 Up to 18 hours battery life6 Touch ID",
       "id": 19
     }

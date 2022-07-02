@@ -1,0 +1,22 @@
+{
+  "macbookAir": [
+    {
+      "image": "https://www.apple.com/v/macbook-air/o/images/overview/compare/compare_mba_m1__dsgh2hoxlkae_large_2x.png",
+      "title": "MacBook Air",
+      "chip": "M1 chip",
+      "price": 999,
+      "screenSize": "Retina 13",
+      "description": "s",
+      "id": 1
+    },
+    {
+      "image": "https://www.apple.com/v/macbook-air/o/images/overview/compare/compare_mba_m2__eyi7f28aeg02_large_2x.png",
+      "title": "MacBook air",
+      "chip": "M2 chip",
+      "price": 1199,
+      "screenSize": "Liquid Retina 13.6",
+      "description": "asdsfaf",
+      "id": 2
+    }
+  ]
+}

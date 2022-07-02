@@ -52,6 +52,7 @@ const ProductsList = () => {
       <div className="icons-air-pro">
         <div className="air">
           <img
+            onClick={() => navigate("/macbook-air")}
             className="macbook-air-icon"
             src="	https://www.apple.com/v/mac/home/bp/images/familybrowser/macbookair_light__f0o95rwae8ae_large.svg"
             alt=""
@@ -60,6 +61,7 @@ const ProductsList = () => {
         </div>
         <div className="pro">
           <img
+            onClick={() => navigate("/macbook-pro")}
             className="macbook-pro-icon"
             src="	https://www.apple.com/v/mac/home/bp/images/familybrowser/macbook_pro_light__e791sjqzt32a_large.svg"
             alt=""
@@ -105,7 +107,7 @@ const ProductsList = () => {
 
       {isAdmin ? (
         <button
-          className="add-mens-button"
+          className="add-macs-button"
           variant="outlined"
           style={{ margin: "30px" }}
           onClick={() => navigate("/add-macs")}>
