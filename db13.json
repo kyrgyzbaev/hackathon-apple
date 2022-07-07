@@ -1,0 +1,46 @@
+{
+  "iphone13": [
+    {
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-green-select?wid=940&hei=1112&fmt=png-alpha&.v=1645036275538",
+      "title": "iPhone 13",
+      "price": 799,
+      "description": "A total powerhouse",
+      "id": 1
+    },
+    {
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pink-select-2021?wid=940&hei=1112&fmt=png-alpha&.v=1645572315935",
+      "title": "iPhone 13",
+      "price": 799,
+      "description": "A total powerhouse",
+      "id": 2
+    },
+    {
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-blue-select-2021?wid=940&hei=1112&fmt=png-alpha&.v=1645572386470",
+      "title": "iPhone 13",
+      "price": 799,
+      "description": "A total powerhouse",
+      "id": 3
+    },
+    {
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-midnight-select-2021?wid=940&hei=1112&fmt=png-alpha&.v=1645572315913",
+      "title": "iPhone 13",
+      "price": 799,
+      "description": "A total powerhouse",
+      "id": 4
+    },
+    {
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-starlight-select-2021?wid=940&hei=1112&fmt=png-alpha&.v=1645572315205",
+      "title": "iPhone 13 ",
+      "price": 799,
+      "description": "A total powerhouse",
+      "id": 5
+    },
+    {
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-product-red-select-2021?wid=940&hei=1112&fmt=png-alpha&.v=1645572315758",
+      "title": "iPhone 13",
+      "price": 799,
+      "description": "A total powerhouse",
+      "id": 6
+    }
+  ]
+}

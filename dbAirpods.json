@@ -1,0 +1,32 @@
+{
+  "airpods": [
+    {
+      "image": "https://www.apple.com/v/airpods/shared/compare/a/images/compare/compare_airpods_2nd_gen__fw52r8rxrpyu_large_2x.png",
+      "title": "AirPods",
+      "price": 188,
+      "description": "2nd Generation",
+      "id": 1
+    },
+    {
+      "image": "https://www.apple.com/v/airpods/shared/compare/a/images/compare/compare_airpods_3rd_gen__dyuzfy04ht0m_large_2x.png",
+      "title": "AirPods",
+      "price": 299,
+      "description": "3rd Generation",
+      "id": 2
+    },
+    {
+      "image": "https://www.apple.com/v/airpods/shared/compare/a/images/compare/compare_airpods_pro__e9uzt0mzviem_large_2x.png",
+      "title": "AirPods Pro",
+      "price": 499,
+      "description": "sdfs",
+      "id": 3
+    },
+    {
+      "image": "https://www.apple.com/v/airpods/shared/compare/a/images/compare/compare_airpods_max__b14s2x6q07rm_large_2x.png",
+      "title": "AirPods Max",
+      "price": 599,
+      "description": "sdsdf",
+      "id": 4
+    }
+  ]
+}

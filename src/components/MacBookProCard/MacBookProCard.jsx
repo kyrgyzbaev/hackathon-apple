@@ -16,19 +16,24 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { authContext } from "../../contexts/authContext";
 import { macbookAirContext } from "../../contexts/macbookAirContext";
 import { macProContext } from "../../contexts/macbookPro";
+import { macbookProCart } from "../../contexts/macbookProCart";
+import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 
 const MacBookProCard = ({ item }) => {
   const navigate = useNavigate();
   const { deleteMacPro } = useContext(macProContext);
   const { isAdmin } = useContext(authContext);
-  // const { addProductToCart, checkProductInCart } = useContext(menscartContext);
-  // const [checkProduct, setCheckProduct] = useState(checkProductInCart(item));
+  const { addProductToCart, checkProductInCart } = useContext(macbookProCart);
+  const [checkProduct, setCheckProduct] = useState(checkProductInCart(item));
 
   // console.log(item);
 
   return (
     <div className="card">
       <CardMedia
+        className="card-media"
         component="img"
         alt="green iguana"
         sx={{ maxWidth: "170px" }}
@@ -75,6 +80,18 @@ const MacBookProCard = ({ item }) => {
           </>
         ) : null}
       </div>
+      <Button
+        onClick={() => {
+          addProductToCart(item);
+          setCheckProduct(checkProductInCart(item));
+        }}
+        size="small">
+        {checkProduct ? (
+          <BookmarkIcon onClick={() => navigate("/cart")} />
+        ) : (
+          <BookmarkBorderIcon onClick={() => navigate("/cart")} />
+        )}
+      </Button>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const MacbookPro = () => {
     getMacPro();
   }, []);
   return (
-    <div>
+    <div className="container-all-mac-pro-media">
       <div className="container-pro-p">
         <p className="pro-mac-p">Macbook Pro</p>
       </div>

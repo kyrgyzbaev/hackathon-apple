@@ -8,7 +8,6 @@ import {
   Typography,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { macsContext } from "../../contexts/macsContext";
 import { macbookAirContext } from "../../contexts/macbookAirContext";
 
 // title, description, price, image

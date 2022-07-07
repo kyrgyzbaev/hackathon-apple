@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
-import React, { useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { authContext } from "../../contexts/authContext";
 import { macbookAirContext } from "../../contexts/macbookAirContext";
-import { macsContext } from "../../contexts/macsContext";
+import Header from "../Header/Header";
 import MacbookAirCard from "../MacbookAirCard/MacbookAirCard";
 
 const MacBookAirList = () => {
@@ -12,13 +12,41 @@ const MacBookAirList = () => {
   const { isAdmin } = useContext(authContext);
 
   const { airs, pages, getAirs } = useContext(macbookAirContext);
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = useState(
+    searchParams.get("q") ? searchParams.get("q") : ""
+  );
+
   useEffect(() => {
     getAirs();
   }, []);
+
+  // const [searchParams, setSearchParams] = useSearchParams();
+  // const [search, setSearch] = useState(
+  //   searchParams.get("q") ? searchParams.get("q") : ""
+  // );
+  // const [price, setPrice] = useState([1, 10000]);
+  // const [page, setPage] = useState(1);
+
   // console.log(airs);
 
+  // useEffect(() => {
+  //   setSearchParams({
+  //     q: search,
+  //     price_gte: price[0],
+  //     price_lte: price[1],
+  //     _page: page,
+  //     _limit: 12,
+  //   });
+  // }, [search, price, page]);
+
+  // useEffect(() => {
+  //   getAirs();
+  // }, [searchParams]);
+
   return (
-    <div>
+    <div className="container-all-mac-air-media">
       <div className="container-all-macbook-air">
         <p className="macbook-air-p">Macbook Air</p>
         <div>
@@ -67,6 +95,7 @@ const MacBookAirList = () => {
       ) : null}
 
       <Box
+        className="box-mac-airs-media"
         display={"flex"}
         flexWrap={"wrap"}
         justifyContent={"center"}

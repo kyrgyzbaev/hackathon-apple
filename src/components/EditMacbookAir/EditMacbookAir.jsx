@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import { useNavigate, useParams } from "react-router-dom";
 import Loader from "../Loader/Loader";
-import { macsContext } from "../../contexts/macsContext";
 import { macbookAirContext } from "../../contexts/macbookAirContext";
 
 // title, description, price, image

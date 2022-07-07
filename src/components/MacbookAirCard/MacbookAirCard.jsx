@@ -15,15 +15,18 @@ import { useNavigate } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { authContext } from "../../contexts/authContext";
 import { macbookAirContext } from "../../contexts/macbookAirContext";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
+import { macbookProCart } from "../../contexts/macbookProCart";
 
 const ProductCard = ({ item }) => {
   const navigate = useNavigate();
   const { deleteAir } = useContext(macbookAirContext);
   const { isAdmin } = useContext(authContext);
-  // const { addProductToCart, checkProductInCart } = useContext(menscartContext);
-  // const [checkProduct, setCheckProduct] = useState(checkProductInCart(item));
+  const { addProductToCart, checkProductInCart } = useContext(macbookProCart);
+  const [checkProduct, setCheckProduct] = useState(checkProductInCart(item));
 
-  console.log(item);
+  // console.log(item);
 
   return (
     <div className="card">
@@ -74,6 +77,18 @@ const ProductCard = ({ item }) => {
           </>
         ) : null}
       </div>
+      <Button
+        onClick={() => {
+          addProductToCart(item);
+          setCheckProduct(checkProductInCart(item));
+        }}
+        size="small">
+        {checkProduct ? (
+          <BookmarkIcon onClick={() => navigate("/cart")} />
+        ) : (
+          <BookmarkBorderIcon onClick={() => navigate("/cart")} />
+        )}
+      </Button>
     </div>
   );
 };

@@ -8,55 +8,38 @@ import {
   Typography,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { macsContext } from "../../contexts/macsContext";
+import { airpodsContext } from "../../contexts/airpodsContext";
 
 // title, description, price, image
 
-const AddMacs = () => {
-  const { createMac } = useContext(macsContext);
+const AddAirpodsMax = () => {
+  const { createAirpods } = useContext(airpodsContext);
   const navigate = useNavigate();
 
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
-  const [chip, setChip] = useState("");
   const [price, setPrice] = useState("");
-  const [screenSize, setScreenSize] = useState("");
   const [description, setDescription] = useState("");
 
   function handleValues() {
-    let newMac = {
+    let newAirpods = {
       image,
       title,
-      chip,
       price,
-      screenSize,
       description,
     };
-    if (
-      !image.trim() ||
-      !title.trim() ||
-      !price ||
-      !screenSize ||
-      !description.trim() ||
-      !chip.trim()
-    ) {
+    if (!image.trim() || !title.trim() || !price || !description.trim()) {
       alert("fill in the fields!");
       return;
     }
-    createMac(newMac);
-    navigate("/macs");
+    createAirpods(newAirpods);
+    navigate("/airpods");
   }
 
   return (
     <Container maxWidth="sm">
       <Breadcrumbs aria-label="breadcrumb">
-        <Link
-          fontFamily={"-moz-initial"}
-          underline="hover"
-          color="inherit"
-          href="/macs">
-          Mac
-        </Link>
+        <p onClick={() => navigate("/airpods")}>AirPods</p>
         <Typography fontFamily={"-moz-initial"} color="text.primary">
           Add
         </Typography>
@@ -66,7 +49,7 @@ const AddMacs = () => {
         flexDirection={"column"}
         padding={"30px"}
         textAlign={"center"}>
-        <p className="add-m-t">Add new mac</p>
+        <p className="add-m-t">Add new AirPods</p>
 
         <TextField
           value={image}
@@ -83,12 +66,7 @@ const AddMacs = () => {
           variant="standard"
           style={{ margin: "10px" }}
         />
-        <TextField
-          value={chip}
-          onChange={e => setChip(e.target.value)}
-          label="Chip"
-          variant="standard"
-        />
+
         <TextField
           type={"number"}
           value={price}
@@ -97,14 +75,6 @@ const AddMacs = () => {
           variant="standard"
           style={{ margin: "10px" }}
         />
-        <TextField
-          value={screenSize}
-          onChange={e => setScreenSize(e.target.value)}
-          label="Screen size and Display"
-          variant="standard"
-          style={{ margin: "10px" }}
-        />
-
         <TextField
           value={description}
           onChange={e => setDescription(e.target.value)}
@@ -117,11 +87,11 @@ const AddMacs = () => {
           onClick={handleValues}
           style={{ margin: "10px" }}
           variant="contained">
-          Add mac
+          Add AirPods
         </button>
       </Box>
     </Container>
   );
 };
 
-export default AddMacs;
+export default AddAirpodsMax;

@@ -1,0 +1,18 @@
+{
+  "airPodsMax": [
+    {
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-silver-202011?wid=940&hei=1112&fmt=png-alpha&.v=1604021221000",
+      "title": "AirPods Max",
+      "price": 123,
+      "description": "fwfsdf",
+      "id": 3
+    },
+    {
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-pink-202011?wid=940&hei=1112&fmt=png-alpha&.v=1604022365000",
+      "title": "AirPods Max",
+      "price": 549,
+      "description": "sdf",
+      "id": 4
+    }
+  ]
+}

@@ -26,6 +26,15 @@
       "screenSize": "Liquid Retina XDR",
       "description": "wdfdf",
       "id": 4
+    },
+    {
+      "image": "https://www.apple.com/v/macbook-pro/af/images/overview/compare/compare_mbp14__f17pgqjk7syi_large_2x.png",
+      "title": "MacBook Pro 14",
+      "chip": "Apple M1 Pro chip",
+      "price": 1199,
+      "screenSize": "Liquid Retina XDR",
+      "description": "asd",
+      "id": 5
     }
   ]
 }

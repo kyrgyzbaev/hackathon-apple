@@ -11,18 +11,23 @@
   background-color: rgb(27, 24, 24);
   padding-left: 400px;
   padding-right: 400px;
+  width: 886px;
 }
 
 .footer {
   width: 100%;
-  height: 30vh;
-  background-color: black;
+  height: 45vh;
+  background-color: rgba(239, 242, 244, 0.582);
   padding: 0;
   margin: 0;
 }
 
 .header p {
   cursor: pointer;
+  color: rgb(185, 183, 183);
+}
+
+.shopping-bag-icon {
   color: rgb(185, 183, 183);
 }
 
@@ -729,10 +734,6 @@
   justify-content: center;
 }
 
-.all-container-3rd {
-  /* margin-right: 240px; */
-}
-
 .rd3-btn {
   width: 70px;
   height: 40px;
@@ -873,7 +874,7 @@
   margin-right: 100px;
 }
 
-.img-airpods-2nd-2 {
+.airpods-2nd-2 {
   width: 270px;
   height: 600px;
 }
@@ -898,7 +899,7 @@
 }
 
 .all-all-airpods-2nd {
-  padding-bottom: 500px;
+  padding-bottom: 200px;
 }
 
 .generation-2nd-airpods {
@@ -1060,8 +1061,8 @@
 }
 
 .img-iphone-13 {
-  width: 700px;
-  height: 350px;
+  width: 750px;
+  height: 450px;
 }
 
 .container-img-iphone-13 {
@@ -1453,4 +1454,1219 @@
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.iphone-13-pro-p {
+  font-size: 60px;
+}
+
+.div-13-pro-p {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.add-iphone-13-pro-btn {
+  width: 150px;
+  height: 30px;
+  background-color: rgb(53, 114, 212);
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.iphone13-pro-p {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.card-13-pro {
+  margin-bottom: 50px;
+}
+
+.container-13-pro-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.video-13-pro {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.img-13-pro {
+  width: 700px;
+  height: 400px;
+  border-radius: 30px;
+  margin-right: 40px;
+}
+
+.img-13-pro-2 {
+  width: 650px;
+  height: 400px;
+  border-radius: 30px;
+}
+
+.p-13-pro {
+  color: white;
+  margin-left: -400px;
+  margin-top: 350px;
+  font-size: 19px;
+}
+
+.img-iphone-13 {
+  width: 750px;
+  height: 500px;
+  border-radius: 30px;
+  margin-right: 50px;
+}
+
+.container-img-iphone-13 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container-iphone-13-p {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.iphone-13-p {
+  font-size: 50px;
+}
+
+.img-iphone-13-2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
+}
+
+.img-iphone-12 {
+  width: 1300px;
+  height: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+}
+
+.container-img-iphone-12 {
+  display: flex;
+  justify-content: center;
+}
+
+.container-12-p {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container-12-p p {
+  font-size: 50px;
+}
+
+.img-iphone-11 {
+  width: 500px;
+  height: 600px;
+}
+
+.img-airpods-2nd-1 {
+  width: 400px;
+  height: 400px;
+}
+
+.img-airpods-2nd-2 {
+  width: 350px;
+  height: 350px;
+}
+
+.img-airpods-2nd-3 {
+  width: 400px;
+  height: 400px;
+}
+
+.img-airpods-2nd-4 {
+  width: 400px;
+  height: 400px;
+}
+
+.container-first-airpods-2nd-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.img-airpods-3rd-1 {
+  width: 400px;
+  height: 400px;
+}
+
+.img-airpods-3rd-2 {
+  width: 400px;
+  height: 400px;
+}
+
+.img-airpods-3rd-3 {
+  width: 400px;
+  height: 400px;
+}
+
+.img-airpods-3rd-4 {
+  width: 400px;
+  height: 400px;
+}
+
+.container-airpods-3rd-img {
+  display: flex;
+  justify-content: center;
+}
+
+.img-airpods-pro-1 {
+  width: 400px;
+  height: 400px;
+}
+
+.img-airpods-pro-2 {
+  width: 400px;
+  height: 400px;
+}
+
+.img-airpods-pro-3 {
+  width: 400px;
+  height: 400px;
+}
+
+.img-airpods-pro-4 {
+  width: 400px;
+  height: 400px;
+}
+
+.container-airpods-pro-img {
+  display: flex;
+  justify-content: center;
+}
+
+.container-2nd-generation {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.container-2nd-generation p {
+  font-size: 50px;
+}
+
+.buy-btn-airpods-2nd {
+  width: 70px;
+  height: 35px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(53, 114, 212);
+  cursor: pointer;
+  color: white;
+}
+
+.container-btn-2nd {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 200px;
+}
+
+.container-3rd-generation {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.container-3rd-generation p {
+  font-size: 50px;
+}
+
+.container-airpods-pro-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.container-airpods-pro-list p {
+  font-size: 50px;
+}
+
+.container-info-2nd {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  margin-left: 400px;
+}
+
+.container-info-airpods-pro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  margin-left: 400px;
+}
+
+.container-info-3rd {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  margin-left: 400px;
+}
+
+.container-airpods-max-p {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container-airpods-max-p p {
+  font-size: 50px;
+}
+
+.img-airpods-max {
+  width: 600px;
+  height: 500px;
+  margin-right: 50px;
+}
+
+.img-airpods-max-2 {
+  width: 350px;
+  height: 500px;
+  margin-right: 50px;
+}
+
+.container-images-airpods-max {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.img-airpods-max-3 {
+  width: 550px;
+  height: 500px;
+}
+
+.card-airpods {
+  margin-bottom: 50px;
+  margin-right: 70px;
+}
+
+.container-all-products-apple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 70px;
+}
+
+.container-all-products-apple p {
+  font-size: 50px;
+}
+
+.container-search-live {
+  margin-top: 60px;
+}
+
+/* .container-all-products {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+} */
+
+.footer-shop-learn a {
+  text-decoration: none;
+  color: black;
+  margin-right: 100px;
+}
+
+.copyright {
+  color: rgb(126, 126, 126);
+}
+
+.container-copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.more-ways {
+  color: rgb(126, 126, 126);
+  margin-bottom: 10px;
+}
+
+.container-more-ways {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(170, 168, 168);
+  margin-top: 75px;
+}
+
+.container-US {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-US p {
+  color: rgb(126, 126, 126);
+  margin-top: -20px;
+  margin-right: 20px;
+}
+
+.servises {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.servises a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.servises p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.all-inscriptions-footer {
+  display: flex;
+  justify-content: baseline;
+}
+
+.add-comment-btn {
+  width: 95px;
+  height: 35px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(53, 114, 212);
+  color: white;
+}
+
+.comments-container-p {
+  max-width: 400px;
+  border-bottom: 1px solid rgb(129, 127, 127);
+}
+
+.name-p {
+  font-size: 22px;
+  color: rgb(167, 168, 169);
+}
+
+.container-btn-add-comment {
+  display: flex;
+  justify-content: center;
+}
+
+.comment-p {
+  font-size: 20px;
+}
+
+.mac-pro-cart-icon {
+  width: 23px;
+}
+
+.apple-store {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.apple-store p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.apple-values p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.favorite-product-p {
+  font-size: 50px;
+}
+.container-favorite-p {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media all and (max-width: 1440px) {
+  .header {
+    width: 886px;
+  }
+
+  .iphone-13pro-img {
+    width: 500px;
+    height: 300px;
+  }
+  .container-iphone-13pro {
+    display: flex;
+    justify-content: center;
+    width: 1680px;
+    height: 300px;
+  }
+  .inscription-iphone-13-pro {
+    margin-left: 200px;
+  }
+  .inscriptions-iphone-13 {
+    margin-left: 200px;
+  }
+
+  .img-iphone-13 {
+    width: 500px;
+    height: 300px;
+    margin-left: 200px;
+  }
+  .container-all-iphone-13 {
+    height: 596px;
+  }
+  .img-iphone-se {
+    width: 400px;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+  .all-all-container-iphone-se {
+    width: 1686px;
+  }
+  .love-the-power {
+    font-size: 50px;
+  }
+  .love-the-price {
+    font-size: 50px;
+  }
+  .inscription-iphone-se {
+    margin-right: 100px;
+  }
+  .footer {
+    width: 1686px;
+    height: 35vh;
+  }
+  .icons_iPhones {
+    margin-left: 250px;
+  }
+  .all-background {
+    width: 1686px;
+  }
+  .all-container-airpods-2nd-generation {
+    margin-left: 150px;
+  }
+  .all-container-aipods-3rd-generation {
+    margin-left: 200px;
+  }
+  .all-container-airpods-pro {
+    margin-left: 200px;
+  }
+  .all-container-airpods-max-media {
+    display: flex;
+    flex-direction: column;
+    margin-left: 230px;
+  }
+
+  .icons-air-pro {
+    margin-left: 250px;
+  }
+  .macs-container {
+    width: 1813px;
+  }
+  .container-macbook-air {
+    margin-left: 350px;
+  }
+  .div-black {
+    width: 1813px;
+  }
+  .black-p {
+    margin-left: 200px;
+  }
+  .img-macBook {
+    margin-left: 200px;
+  }
+
+  /* .vh5-container {
+    width: 100%;
+  }
+  .iphone-13-container-vh2 {
+    width: 1440px;
+  }
+  .vh3-container {
+    width: 1440px;
+  } */
+}
+
+@media all and (max-width: 1024px) {
+  .table-container {
+    margin-left: 500px;
+  }
+  .container-favorite-media {
+    display: flex;
+    margin-left: 400px;
+  }
+  .div-black {
+    width: 1932px;
+  }
+  .macs-container {
+    width: 1932px;
+  }
+  .icons-air-pro {
+    margin-left: 750px;
+  }
+  .container-macbook-air {
+    width: 800px;
+
+    padding-left: 150px;
+  }
+  .air-name {
+    font-size: 30px;
+  }
+  .dont-take {
+    font-size: 20px;
+  }
+  .dollar {
+    font-size: 15px;
+  }
+  .black-p {
+    padding-left: 150px;
+  }
+  .img-macBook {
+    padding-left: 150px;
+  }
+  .inscriptions-macbook-air {
+    margin-top: 0;
+  }
+  .icons_iPhones {
+    margin-left: 700px;
+  }
+  .inscription-iphone-13-pro {
+    margin-left: 700px;
+  }
+  .container-iphone-13pro {
+    margin-left: 25px;
+  }
+  .container-all-iphone-13 {
+    margin-left: 500px;
+  }
+  .container-all-iphone-13-pro-media {
+    margin-left: 350px;
+  }
+  .box-iphone-13-pro {
+    margin-left: 250px;
+  }
+  .container-13-pro-btn {
+    margin-left: 250px;
+  }
+  .iphone-13-pro-p {
+    margin-left: 330px;
+  }
+  .container-all-iphone-13-media {
+    margin-left: 400px;
+  }
+  .img-iphone-13-2 {
+    width: 300px;
+    height: 300px;
+  }
+  .box-iphone-13 {
+    margin-left: 250px;
+  }
+  .iphone-13-p {
+    margin-left: 300px;
+  }
+  .container-all-iphone-12-media {
+    margin-left: 650px;
+  }
+  .container-iphone-12-btn {
+    margin-left: 118px;
+  }
+  .container-first-airpods-2nd-img {
+    margin-left: 500px;
+  }
+  .container-2nd-generation p {
+    margin-right: -500px;
+    margin-bottom: 20px;
+  }
+  .info-2nd-airpods {
+    font-size: 30px;
+  }
+  .container-3rd-generation {
+    margin-right: -500px;
+  }
+  .container-airpods-3rd-img {
+    margin-left: 400px;
+  }
+  .info-airpods-3rd {
+    font-size: 30px;
+  }
+  .container-airpods-pro-list {
+    margin-right: -500px;
+  }
+  .info-airpods-pro {
+    font-size: 30px;
+  }
+  .container-airpods-pro-img {
+    margin-left: 400px;
+  }
+  .all-container-airpods-max-media {
+    margin-left: 700px;
+  }
+  .container-airpods-max {
+    margin-left: 100px;
+  }
+  .footer {
+    height: 50vh;
+  }
+  .all-container-all-products {
+    margin-right: -500px;
+  }
+  .box-mac-pro-card {
+    margin-left: 100px;
+  }
+  .box-mac-air-card {
+    margin-left: 100px;
+  }
+  .box-iphone-13-pro-card {
+    margin-left: 100px;
+  }
+  .box-iphone-13-card {
+    margin-left: 100px;
+  }
+  .box-iphone-12-card {
+    margin-left: 100px;
+  }
+  .box-airpods-card {
+    margin-left: 160px;
+  }
+  .container-all-mac-air-media {
+    margin-left: 600px;
+  }
+  .macbook-air-p {
+    margin-right: -100px;
+  }
+  .container-all-mac-pro-media {
+    margin-left: 700px;
+  }
+  .pro-mac-p {
+    margin-right: -120px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .all-container-all-products {
+    margin-right: -800px;
+  }
+  .icons-air-pro {
+    margin-left: 850px;
+  }
+  .air p {
+    font-size: 13px;
+  }
+  .pro p {
+    font-size: 13px;
+  }
+  .macbook-air-p {
+    font-size: 68px;
+    margin-right: -250px;
+  }
+  .container-images-air {
+    margin-left: 270px;
+    margin-bottom: 50px;
+  }
+  .box-mac-airs-media {
+    margin-left: 300px;
+  }
+  .container-btn-add-air {
+    margin-left: 230px;
+    width: 120px;
+  }
+  .container-all-mac-pro-media {
+    margin-left: 850px;
+  }
+  .mac-pro-add-container {
+    width: 130px;
+    margin-left: -75px;
+  }
+  .container-pro-p {
+    width: 500px;
+    font-size: 68px;
+    margin-left: -270px;
+  }
+  .icons_iPhones {
+    margin-left: 900px;
+  }
+  .iphone_icon-1 p {
+    width: 70px;
+    font-size: 12px;
+  }
+  .iphone_icon-2 p {
+    width: 70px;
+    font-size: 12px;
+    padding-left: 22px;
+  }
+  .iphone_icon-3 p {
+    width: 70px;
+    font-size: 12px;
+  }
+  .inscription-iphone-13-pro {
+    margin-left: 900px;
+  }
+  .iphone-13pro-p {
+    width: 180px;
+    font-size: 30px;
+  }
+  .oh-so-p {
+    font-size: 25px;
+  }
+  .iphone-13-pro-dollar {
+    width: 80px;
+    font-size: 20px;
+  }
+  .iphone-13-pro-btn {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    margin-right: 20px;
+  }
+  .iphone-13-pro-a {
+    font-size: 13px;
+    width: 80px;
+  }
+  .iphone-13pro-img {
+    margin-left: 30px;
+    width: 350px;
+    height: 250px;
+  }
+
+  .container-for-height {
+    height: 430px;
+  }
+  .iphone-13-p {
+    font-size: 30px;
+    width: 140px;
+  }
+  .your-new-super-power {
+    font-size: 24px;
+    margin-left: 290px;
+    margin-top: 5px;
+  }
+  .iphone-13-dollar {
+    font-size: 20px;
+    margin-left: 310px;
+    width: 80px;
+  }
+  .iphone-13-btn {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    margin-left: 280px;
+  }
+  .iphone-13-a {
+    font-size: 13px;
+    width: 80px;
+    margin-left: 290px;
+  }
+  .img-iphone-13 {
+    width: 350px;
+    height: 250px;
+    margin-left: 520px;
+  }
+  .container-all-iphone-13 {
+    height: 512px;
+  }
+  .iphone-se-p {
+    font-size: 30px;
+  }
+  .love-the-power {
+    font-size: 35px;
+  }
+  .love-the-price {
+    font-size: 35px;
+  }
+  .iphone-se-dollar {
+    font-size: 20px;
+  }
+  .iphone-se-btn {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .iphone-se-a {
+    font-size: 13px;
+  }
+  .iphone-13-pro-p {
+    font-size: 50px;
+  }
+  .div-13-pro-p {
+    width: 700px;
+  }
+  .video-13-pro {
+    margin-left: 220px;
+  }
+  .box-iphone-13-pro {
+    margin-left: 500px;
+  }
+  .container-13-pro-btn {
+    margin-left: 450px;
+    width: 130px;
+  }
+  .p-1 {
+    font-size: 20px;
+  }
+  .p-2 {
+    font-size: 15px;
+  }
+  .iphone-13-p {
+    font-size: 34px;
+  }
+
+  .container-iphone-13-p {
+    width: 700px;
+  }
+  .box-iphone-13 {
+    margin-left: 500px;
+  }
+  .img-iphone-13-2 {
+    width: 250px;
+    height: 250px;
+  }
+  .container-12-p p {
+    font-size: 50px;
+    margin-right: 200px;
+  }
+  .container-12-p {
+    width: 700px;
+  }
+  .img-iphone-12 {
+    width: 900px;
+    height: 450px;
+    margin-left: 300px;
+  }
+  .box-iphone-12 {
+    margin-left: 200px;
+  }
+  .img-iphone-se {
+    width: 400px;
+    height: 500px;
+  }
+  .all-all-container-iphone-se {
+    height: 700px;
+  }
+  .img-airpods-2nd-1 {
+    width: 550px;
+    height: 350px;
+  }
+  .img-airpods-2nd-2 {
+    width: 500px;
+    height: 300px;
+  }
+  .img-airpods-2nd-3 {
+    width: 550px;
+    height: 350px;
+  }
+  .img-airpods-2nd-4 {
+    width: 550px;
+    height: 350px;
+  }
+  .info-2nd-airpods {
+    width: 250px;
+    font-size: 25px;
+  }
+  .buy-btn-airpods-2nd {
+    margin-right: -300px;
+  }
+
+  .info-airpods-3rd {
+    width: 250px;
+    font-size: 25px;
+  }
+  .container-airpods-3rd-img {
+    margin-left: 650px;
+  }
+  .container-airpods-pro-img {
+    margin-left: 650px;
+  }
+  .info-airpods-pro {
+    width: 250px;
+    font-size: 25px;
+  }
+  .container-airpods-max-p {
+    width: 400px;
+  }
+  .container-images-airpods-max {
+    margin-left: 150px;
+  }
+  .box-airpods-max-media {
+    margin-left: 150px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .all-container-all-products {
+    margin-left: 400px;
+  }
+  .container-p-all-products-apple {
+    width: 1400px;
+    margin-left: 10px;
+  }
+  .container-all-products-apple p {
+    font-size: 40px;
+  }
+  .macbook-air-p {
+    width: 800px;
+    font-size: 50px;
+    margin-left: 700px;
+  }
+  .container-images-air {
+    margin-left: 500px;
+  }
+
+  .container-img-iphone-13 {
+    margin-left: 110px;
+  }
+  .video-13-pro {
+    margin-left: 320px;
+  }
+  .container-img-iphone-13 {
+    margin-left: 220px;
+  }
+  .container-img-iphone-12 {
+    margin-left: 100px;
+  }
+  .container-2nd-generation {
+    margin-left: 400px;
+  }
+  .container-btn-2nd {
+    margin-left: 400px;
+  }
+  .container-first-airpods-2nd-img {
+    margin-left: 650px;
+  }
+  .container-3rd-generation {
+    width: 700px;
+    margin-left: 300px;
+  }
+  .container-airpods-pro-list {
+    margin-left: 300px;
+    width: 700px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .header {
+    width: 800px;
+  }
+  .footer {
+    width: 1500px;
+  }
+  .container-macbook-air {
+    margin-left: 280px;
+  }
+  .black-p {
+    margin-left: 50px;
+  }
+  .img-macBook {
+    margin-left: 50px;
+  }
+  .icons-air-pro {
+    margin-left: 770px;
+  }
+  .inscriptions-footer {
+    margin-right: 170px;
+  }
+  .container-more-ways {
+    margin-right: 100px;
+  }
+  .container-copyright {
+    margin-right: 100px;
+  }
+  .container-US {
+    margin-right: 200px;
+  }
+  .container-all-mac-air-media {
+    margin-left: 500px;
+  }
+  .container-all-mac-pro-media {
+    margin-left: 750px;
+  }
+  .all-products-apple-p {
+    margin-left: 50px;
+  }
+  .container-for-height {
+    margin-left: -100px;
+  }
+  .icons_iPhones {
+    margin-left: 800px;
+  }
+  .img-iphone-13 {
+    margin-left: 200px;
+  }
+  .inscriptions-iphone-13 {
+    margin-left: 150px;
+  }
+  .video-13-pro {
+    margin-left: 250px;
+  }
+  .iphone-13-p {
+    margin-left: 100px;
+  }
+  .img-iphone-13 {
+    margin-left: 200px;
+  }
+  .box-iphone-13 {
+    margin-left: 400px;
+  }
+  .container-all-iphone-12-media {
+    margin-left: 500px;
+  }
+  .box-iphone-13-pro {
+    margin-left: 450px;
+  }
+  .container-13-pro-btn {
+    margin-left: 380px;
+  }
+  .airpods-icons {
+    margin-left: -60px;
+  }
+  .all-container-airpods-video {
+    margin-left: -20px;
+  }
+  .all-all-pro {
+    margin-left: -20px;
+  }
+  .all-all-airpods-max {
+    margin-left: -20px;
+  }
+  .all-all-airpods-2nd {
+    margin-left: -20px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .all-container-airpods-pro {
+    margin-bottom: 0;
+  }
+  .div-black {
+    width: 1550px;
+  }
+  .container-macbook-air {
+    width: 500px;
+  }
+  .header {
+    width: 500px;
+  }
+  .footer {
+    width: 1300px;
+  }
+  .macs-container {
+    width: 1550px;
+  }
+  .icons-air-pro {
+    margin-left: 650px;
+  }
+  .all-container-all-products {
+    margin-left: 100px;
+  }
+  .vh5-container {
+    width: 1300px;
+  }
+  .vh3-container {
+    width: 1300px;
+  }
+  .iphone-13-container-vh2 {
+    width: 1300px;
+  }
+  .all-all-container-iphone-se {
+    width: 1300px;
+  }
+  .your-new-super-power {
+    margin-left: 100px;
+  }
+  .container-for-height {
+    margin-left: -200px;
+  }
+  .icons_iPhones {
+    margin-left: 700px;
+  }
+  /* .container-all-iphone-13 {
+    margin-left: 200px;
+  } */
+  .container-img-iphone-13 {
+    margin-left: 100px;
+  }
+  .iphone-13-dollar {
+    margin-left: 150px;
+  }
+  .iphone-13-btn {
+    margin-left: 125px;
+  }
+  .iphone-13-a {
+    margin-left: 140px;
+  }
+  .inscriptions-iphone-13 {
+    margin-left: 120px;
+  }
+  .video-13-pro {
+    margin-left: 180px;
+  }
+  .img-13-pro {
+    width: 600px;
+    height: 300px;
+  }
+  .img-13-pro-2 {
+    width: 600px;
+    height: 300px;
+  }
+  .iphone-13-pro-p {
+    margin-left: 100px;
+  }
+  .box-iphone-13-pro {
+    margin-left: 400px;
+  }
+  .container-13-pro-btn {
+    margin-left: 330px;
+  }
+  .box-iphone-13 {
+    margin-left: 350px;
+  }
+  .container-img-iphone-13 {
+    margin-left: 240px;
+  }
+  .all-container-airpods-video {
+    margin-right: 550px;
+  }
+  .airpods-icons {
+    margin-right: 300px;
+  }
+  .container-airpods {
+    width: 1250px;
+  }
+  .inscr-video-airpods {
+    margin-left: 100px;
+  }
+  .all-all-pro {
+    margin-right: 550px;
+  }
+  .all-all-airpods-max {
+    margin-right: 505px;
+  }
+  .all-all-airpods-2nd {
+    margin-right: 505px;
+  }
+  .cards-airpods {
+    margin-right: 300px;
+  }
 }

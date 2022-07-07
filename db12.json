@@ -1,0 +1,46 @@
+{
+  "iphone12": [
+    {
+      "image": "https://asiastore.kg/image/cache/catalog/iphone/iphone12/201106080044643446-670x540.jpg",
+      "title": "iPhone 12",
+      "price": 599,
+      "description": "As amazing as ever",
+      "id": 1
+    },
+    {
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone12/201106080012768545-670x540.webp",
+      "title": "iPhone 12",
+      "price": 599,
+      "description": "As amazing as ever",
+      "id": 2
+    },
+    {
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone12/201106080015869757-670x540.webp",
+      "title": "iPhone 12",
+      "price": 599,
+      "description": "As amazing as ever",
+      "id": 3
+    },
+    {
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone12/201106080048951631-670x540.webp",
+      "title": "iPhone 12",
+      "price": 599,
+      "description": "As amazing as ever",
+      "id": 4
+    },
+    {
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone12/101014160024903272-670x540.webp",
+      "title": "iPhone 12",
+      "price": 599,
+      "description": "As amazing as ever",
+      "id": 5
+    },
+    {
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone12/201106080027742331-670x540.webp",
+      "title": "iPhone 12",
+      "price": 599,
+      "description": "As amazing as ever",
+      "id": 6
+    }
+  ]
+}

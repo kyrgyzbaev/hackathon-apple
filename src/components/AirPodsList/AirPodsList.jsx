@@ -1,11 +1,24 @@
-import React from "react";
+import { Box } from "@mui/material";
+import React, { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { airpodsContext } from "../../contexts/airpodsContext";
+import { authContext } from "../../contexts/authContext";
+import AirpodsCard from "../AirpodsCard/AirpodsCard";
 
 const AirPodsList = () => {
+  const { isAdmin } = useContext(authContext);
+  const { airpods, getAirpods } = useContext(airpodsContext);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    getAirpods();
+  }, []);
   return (
     <div className="all-background">
       <div className="airpods-icons">
         <div className="airpods-icon-1">
           <img
+            onClick={() => navigate("/airpods-2nd")}
             className="airpods-img-1"
             src="	https://www.apple.com/v/airpods/r/images/chapternav/airpods_2gen_light__ckwbqlgv1r9e_large.svg"
             alt=""
@@ -14,6 +27,7 @@ const AirPodsList = () => {
         </div>
         <div className="airpods-icon-2">
           <img
+            onClick={() => navigate("/airpods-3rd")}
             className="airpods-img-2"
             src="	https://www.apple.com/v/airpods/r/images/chapternav/airpods_3gen_light__6r7zooyk4lua_large.svg"
             alt=""
@@ -22,6 +36,7 @@ const AirPodsList = () => {
         </div>
         <div className="airpods-icon-3">
           <img
+            onClick={() => navigate("/airpods-pro")}
             className="airpods-img-3"
             src="	https://www.apple.com/v/airpods/r/images/chapternav/airpods_pro_light__ets5a19rt3au_large.svg"
             alt=""
@@ -30,6 +45,7 @@ const AirPodsList = () => {
         </div>
         <div className="airpods-icon-4">
           <img
+            onClick={() => navigate("/airpods-max")}
             className="airpods-img-4"
             src="https://www.apple.com/v/airpods/r/images/chapternav/airpods_max_light__cvaaddhgazqu_large.svg"
             alt=""
@@ -44,6 +60,7 @@ const AirPodsList = () => {
       <div className="all-container-airpods-video">
         <div className="container-video-airpods">
           <video
+            className="video-airpods-pro"
             width="320"
             height="240"
             loop="true"
@@ -123,7 +140,7 @@ const AirPodsList = () => {
               alt=""
             />
             <img
-              className="img-airpods-2nd-2"
+              className="airpods-2nd-2"
               src="https://www.apple.com/v/airpods/r/images/overview/airpods_2ndgen_right__gahfggwvcx6q_large_2x.png"
               alt=""
             />
@@ -139,6 +156,25 @@ const AirPodsList = () => {
           </a>
         </div>
       </div>
+      {isAdmin ? (
+        <div className="container-13-pro-btn">
+          <button
+            onClick={() => navigate("/add-airpods")}
+            className="add-iphone-13-pro-btn">
+            Add AirPods
+          </button>
+        </div>
+      ) : null}
+      <Box
+        className="cards-airpods"
+        display={"flex"}
+        flexWrap={"wrap"}
+        justifyContent={"center"}
+        paddingTop={"30px"}>
+        {airpods.map(item => (
+          <AirpodsCard key={item.id} item={item} />
+        ))}
+      </Box>
     </div>
   );
 };

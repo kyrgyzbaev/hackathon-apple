@@ -10,12 +10,8 @@ import Pagination from "@mui/material/Pagination";
 import { useContext, useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { authContext } from "../../contexts/authContext";
-import { macsContext } from "../../contexts/macsContext";
-import MacsCard from "../MacsCard/MacsCard";
 
 const ProductsList = () => {
-  const { getMacs, macs, pages } = useContext(macsContext);
-
   const { isAdmin } = useContext(authContext);
 
   const navigate = useNavigate();
@@ -24,24 +20,20 @@ const ProductsList = () => {
   const [search, setSearch] = useState(
     searchParams.get("q") ? searchParams.get("q") : ""
   );
-  const [price, setPrice] = useState([1, 10000]);
-  const [page, setPage] = useState(1);
+  // const [price, setPrice] = useState([1, 10000]);
 
-  useEffect(() => {
-    getMacs();
-  }, []);
-  useEffect(() => {
-    setSearchParams({
-      q: search,
-      price_gte: price[0],
-      price_lte: price[1],
-      _page: page,
-      _limit: 4,
-    });
-  }, [search, price, page]);
-  useEffect(() => {
-    getMacs();
-  }, [searchParams]);
+  // setSearchParams({
+  //   q: search,
+  // price_gte: price[0],
+  // price_lte: price[1],
+  // _page: page,
+  //     _limit: 4,
+  //   });
+  // }, [search ]);
+  // useEffect(() => {
+  //   getMacs();
+  // }, [searchParams]);
+
   // console.log(pages);
   //   console.log(price);
 
@@ -79,7 +71,7 @@ const ProductsList = () => {
           <p className="dont-take">Don’t take it lightly.</p>
           <p className="dollar">$ 1199</p>
           <button>Buy</button>
-          <a href="">Learn more {">"} </a>
+          <a href="/macbook-air">Learn more {">"} </a>
         </div>
 
         <img
@@ -95,7 +87,7 @@ const ProductsList = () => {
           <p className="div-bl-p-2">Pro anywhere.</p>
           <p className="from">$ 1299</p>
           <button>Buy</button>
-          <a href="">Learn more {">"} </a>
+          <a href="/macbook-pro">Learn more {">"} </a>
         </div>
 
         <img
@@ -104,16 +96,6 @@ const ProductsList = () => {
           alt=""
         />
       </div>
-
-      {isAdmin ? (
-        <button
-          className="add-macs-button"
-          variant="outlined"
-          style={{ margin: "30px" }}
-          onClick={() => navigate("/add-macs")}>
-          Add macs
-        </button>
-      ) : null}
 
       {/* <Filters
         search={search}
@@ -126,36 +108,6 @@ const ProductsList = () => {
           <AdvertisingPictureMacs key={item.id} item={item} />
         ))}
       </Box> */}
-
-      <Box
-        display={"flex"}
-        flexWrap={"wrap"}
-        justifyContent={"center"}
-        paddingTop={"30px"}>
-        {macs.map(item => (
-          <MacsCard key={item.id} item={item} />
-        ))}
-      </Box>
-      <Box display={"flex"} justifyContent={"center"}>
-        {/* <Pagination
-          sx={{ marginBottom: "50px" }}
-          page={page}
-          count={isNaN(pages) ? 0 : pages}
-          variant="outlined"
-          shape="rounded"
-          onChange={(e, value) => setPage(value)}
-        /> */}
-        <Stack spacing={2}>
-          <Pagination
-            sx={{ marginBottom: "50px" }}
-            page={page}
-            count={isNaN(pages) ? 0 : pages}
-            color="primary"
-            shape="circle"
-            onChange={(e, value) => setPage(value)}
-          />
-        </Stack>
-      </Box>
     </Container>
   );
 };

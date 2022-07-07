@@ -13,12 +13,12 @@ import EditIcon from "@mui/icons-material/Edit";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { useNavigate } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { macsContext } from "../../contexts/macsContext";
 import { authContext } from "../../contexts/authContext";
+import { airpodsMaxContext } from "../../contexts/airpodsMaxContext";
 
-const ProductCard = ({ item }) => {
+const AirpodsMaxCard = ({ item }) => {
   const navigate = useNavigate();
-  const { deleteMac } = useContext(macsContext);
+  const { deleteAirpodsMax } = useContext(airpodsMaxContext);
   const { isAdmin } = useContext(authContext);
   // const { addProductToCart, checkProductInCart } = useContext(menscartContext);
   // const [checkProduct, setCheckProduct] = useState(checkProductInCart(item));
@@ -26,11 +26,11 @@ const ProductCard = ({ item }) => {
   // console.log(item);
 
   return (
-    <div className="card">
+    <div className="card-13-pro">
       <CardMedia
         component="img"
         alt="green iguana"
-        sx={{ maxWidth: "170px" }}
+        sx={{ maxWidth: "190px" }}
         // height="100%"
         // width="100%"
         image={item.image}
@@ -39,7 +39,7 @@ const ProductCard = ({ item }) => {
         <p className="p-1" component="div">
           {item.title}
         </p>
-        <p className="p-2">{item.chip}</p>
+
         <p className="p-3">
           {"$ "}
           {item.price}
@@ -48,12 +48,11 @@ const ProductCard = ({ item }) => {
 
         <a
           className="learn-more"
-          onClick={() => navigate(`/macs/${item.id}`)}
+          onClick={() => navigate(`/airpods-max/${item.id}`)}
           href="">
-          Learn more {" >"}
+          Learn more
         </a>
 
-        <p className="p-4">{item.screenSize}</p>
         {/* <p className="p-5">
           {item.description.length > 20
             ? `${item.description.slice(0, 15)}... `
@@ -63,12 +62,12 @@ const ProductCard = ({ item }) => {
       <div className="card-icons">
         {isAdmin ? (
           <>
-            <Button size="small" onClick={() => deleteMac(item.id)}>
+            <Button size="small" onClick={() => deleteAirpodsMax(item.id)}>
               <DeleteIcon className="delete-icon" />
             </Button>
             <Button
               size="small"
-              onClick={() => navigate(`/edit-macs/${item.id}`)}>
+              onClick={() => navigate(`/edit-airpods-max/${item.id}`)}>
               <EditIcon className="edit-icon" />
             </Button>
           </>
@@ -78,4 +77,4 @@ const ProductCard = ({ item }) => {
   );
 };
 
-export default ProductCard;
+export default AirpodsMaxCard;

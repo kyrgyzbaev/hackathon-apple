@@ -1,29 +1,29 @@
 import React, { useReducer } from "react";
 import axios from "axios";
 
-export const macsContext = React.createContext();
+export const airpodsContext = React.createContext();
 
-const API = "http://localhost:8003/mac";
+const API = "http://localhost:8010/airpods";
 
 const INIT_STATE = {
-  macs: [],
-  oneMac: null,
+  airpods: [],
+  oneAirpods: null,
   pages: 0,
 };
 
 function reducer(state = INIT_STATE, action) {
   switch (action.type) {
-    case "GET_MACS":
+    case "GET_AIRPODS":
       return {
         ...state,
-        macs: action.payload.data,
+        airpods: action.payload.data,
         pages: Math.ceil(action.payload.headers["x-total-count"] / 3),
       };
 
-    case "GET_ONE_MAC":
+    case "GET_ONE_AIRPODS":
       return {
         ...state,
-        oneMac: action.payload,
+        oneAirpods: action.payload,
       };
 
     default:
@@ -31,57 +31,54 @@ function reducer(state = INIT_STATE, action) {
   }
 }
 
-const MacsContextProvider = ({ children }) => {
+const AirpodsContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
-  async function createMac(newMac) {
-    await axios.post(API, newMac);
+  async function createAirpods(newAirpods) {
+    await axios.post(API, newAirpods);
   }
 
-  async function getMacs() {
+  async function getAirpods() {
     // console.log(`${API}${window.location.search}`);
     let res = await axios(`${API}${window.location.search}`);
     // console.log(res);
     dispatch({
-      type: "GET_MACS",
+      type: "GET_AIRPODS",
       payload: res,
     });
   }
 
   //   console.log(state.pages);
-  async function deleteMac(id) {
+  async function deleteAirpods(id) {
     await axios.delete(`${API}/${id}`);
-    getMacs();
+    getAirpods();
   }
 
-  async function getOneMac(id) {
+  async function getOneAirpods(id) {
     let res = await axios(`${API}/${id}`);
     dispatch({
-      type: "GET_ONE_MAC",
+      type: "GET_ONE_AIRPODS",
       payload: res.data,
     });
   }
 
-  async function updateMac(id, editedProduct) {
+  async function updateAirpods(id, editedProduct) {
     await axios.patch(`${API}/${id}`, editedProduct);
   }
   return (
-    <macsContext.Provider
+    <airpodsContext.Provider
       value={{
-        macs: state.macs,
-        advertisingPicture: state.advertisingPicture,
-        oneMac: state.oneMac,
-        onePicture: state.onePicture,
+        airpods: state.airpods,
+        oneAirpods: state.oneAirpods,
         pages: state.pages,
-        pagesPicture: state.pagesPicture,
-        createMac,
-        getMacs,
-        deleteMac,
-        getOneMac,
-        updateMac,
+        createAirpods,
+        getAirpods,
+        deleteAirpods,
+        getOneAirpods,
+        updateAirpods,
       }}>
       {children}
-    </macsContext.Provider>
+    </airpodsContext.Provider>
   );
 };
-export default MacsContextProvider;
+export default AirpodsContextProvider;
