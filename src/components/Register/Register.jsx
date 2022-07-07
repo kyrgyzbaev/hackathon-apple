@@ -44,6 +44,7 @@ const Register = () => {
         />
 
         <TextField
+          sx={{ marginBottom: "10px" }}
           value={passwordConfirmation}
           onChange={e => setPasswordConfirmation(e.target.value)}
           id="outlined-password-input"
@@ -54,7 +55,7 @@ const Register = () => {
 
         <Button
           onClick={handleValues}
-          sx={{ marginTop: "10px" }}
+          sx={{ marginTop: "10px", marginBottom: "20px" }}
           variant="outlined">
           Register
         </Button>

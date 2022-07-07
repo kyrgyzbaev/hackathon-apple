@@ -33,15 +33,18 @@ const Login = () => {
 
         <p className="log-in">Log in</p>
         <TextField
+          sx={{ marginBottom: "10px" }}
+          className="login-email"
           value={email}
           onChange={e => setEmail(e.target.value)}
-          sx={{ marginBottom: "10px" }}
           id="outlined-basic"
           label="Email"
           variant="outlined"
         />
         <TextField
+          className="login-password"
           value={password}
+          sx={{ marginBottom: "10px" }}
           onChange={e => setPassword(e.target.value)}
           id="outlined-password-input"
           label="Password"
@@ -50,11 +53,11 @@ const Login = () => {
         />
         <Button
           onClick={handleValues}
-          sx={{ marginTop: "10px" }}
+          sx={{ marginTop: "10px", marginBottom: "20px" }}
           variant="outlined">
           Log in
         </Button>
-        <Typography>
+        <Typography sx={{ marginBottom: "20px" }}>
           Don't have a registered account? <a href="/register">Sign up</a>
         </Typography>
       </Box>
