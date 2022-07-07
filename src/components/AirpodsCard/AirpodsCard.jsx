@@ -78,19 +78,19 @@ const AirpodsMaxCard = ({ item }) => {
             </Button>
           </>
         ) : null}
+        <Button
+          onClick={() => {
+            addProductToCart(item);
+            setCheckProduct(checkProductInCart(item));
+          }}
+          size="small">
+          {checkProduct ? (
+            <BookmarkIcon onClick={() => navigate("/cart")} />
+          ) : (
+            <BookmarkBorderIcon onClick={() => navigate("/cart")} />
+          )}
+        </Button>
       </div>
-      <Button
-        onClick={() => {
-          addProductToCart(item);
-          setCheckProduct(checkProductInCart(item));
-        }}
-        size="small">
-        {checkProduct ? (
-          <BookmarkIcon onClick={() => navigate("/cart")} />
-        ) : (
-          <BookmarkBorderIcon onClick={() => navigate("/cart")} />
-        )}
-      </Button>
     </div>
   );
 };
